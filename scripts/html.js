@@ -7,9 +7,9 @@ var urlHouse = 'https://api.propublica.org/congress/v1/117/house/members.json';
 
 
 
-if ((window.location.href == "http://127.0.0.1:5500/tgif-project/Members.html")
-  || (window.location.href == "http://127.0.0.1:5500/tgif-project/Members.html?chamber=senate")
-  || (window.location.href == "http://127.0.0.1:5500/tgif-project/Members.html?chamber=house")) {
+if ((window.location.pathname == "/Members.html")
+  || (window.location.pathname == "/Members.html?chamber=senate")
+  || (window.location.pathname == "/Members.html?chamber=house")) {
 
 
   var dataSeparation = {
