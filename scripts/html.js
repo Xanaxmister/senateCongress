@@ -47,12 +47,10 @@ webChange.addEventListener("click", function (evt) {
   if (evt.target.innerHTML == "HOUSE") {
     searchParams.set("chamber", "house");
     window.location.search = searchParams.toString();
-    
   }
   else {
     searchParams.set("chamber", "senate");
     window.location.search = searchParams.toString();
-  
   }
 });
 

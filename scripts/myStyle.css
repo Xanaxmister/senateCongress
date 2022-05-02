@@ -4,8 +4,9 @@ body {
   background-color: #d3d3d3;
   background-position: left;
   background-attachment: scroll;
-  cursor:  url("../logoMouse.png"), auto;
+  cursor: url("../logoMouse.png"), auto;
 }
+
 a,
 a:link,
 a:visited {
@@ -14,16 +15,19 @@ a:visited {
   cursor: pointer;
   font-weight: bold;
 }
+
 a:hover {
   text-decoration: none;
   cursor: pointer;
   color: black;
 }
+
 .tableName {
   box-shadow: 5px 10px 8px 10px #888888;
   text-align: center;
 }
-th{
+
+th {
   width: 70px;
 }
 
@@ -32,6 +36,7 @@ th{
   justify-content: center;
   align-items: center;
 }
+
 .containerHome {
   padding-top: 100px;
   margin-left: 20%;
@@ -43,18 +48,37 @@ th{
 td {
   font-size: 15px;
 }
+
 .hide:hover {
   box-shadow: 2.5px 5px 4px 5px #888888;
   animation: BiggerText 10s none;
   background-color: #d3d3d3;
 }
+
 @keyframes BiggerText {
   50% {
     transform: scale(1.1);
     font-weight: 400;
   }
 }
-.navigation-main{
+.wrapper{
+  display: flex;
+  gap: var(--gap, 15px);
+  border-bottom: 2px solid grey;
+}
+.attendanceText{
+  box-shadow: 2.5px 5px 4px 5px #888888;
+  background-color: #d3d3d3;
+  width: 50%;
+}
+
+.main-table{
+  width: 50%;
+  text-align: center;
+  box-shadow: 5px 10px 8px 10px #888888;
+}
+
+.navigation-main {
   display: flex;
   font-size: 20px;
   justify-content: center;
