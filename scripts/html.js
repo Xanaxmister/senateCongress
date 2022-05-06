@@ -44,7 +44,7 @@ var searchParams = new URLSearchParams(window.location.search);
 // ----------- Pushing and sorting to an array Republicans, Democrats, Indepentent groups. -------------
 webChange.addEventListener("click", function (evt) {
   evt.preventDefault();
-  if (evt.target.innerHTML == "HOUSE") {
+  if (evt.target.innerHTML == "House") {
     searchParams.set("chamber", "house");
     window.location.search = searchParams.toString();
   }

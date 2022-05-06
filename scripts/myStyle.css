@@ -5,8 +5,12 @@ body {
   background-position: left;
   background-attachment: scroll;
   cursor: url("../logoMouse.png"), auto;
+ 
 }
-
+@font-face{
+  font-family: 'bulgatti';
+  src: url('/fonts/BULGATTI-XGMV.TTF') format('truetype');
+}
 a,
 a:link,
 a:visited {
@@ -14,8 +18,13 @@ a:visited {
   text-decoration: none;
   cursor: pointer;
   font-weight: bold;
+  font-family: 'bulgatti';
+  font-size: 14px;
+  letter-spacing: 3px;
 }
-
+.dropdown-toggle::after {
+  content: none;
+}
 a:hover {
   text-decoration: none;
   cursor: pointer;
@@ -61,23 +70,41 @@ td {
     font-weight: 400;
   }
 }
-.wrapper{
+
+.wrapper {
   display: flex;
   gap: var(--gap, 15px);
+  padding-bottom: 3%;
   border-bottom: 2px solid grey;
 }
-.attendanceText{
+
+.secondWrapper {
+  display: flex;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  gap: var(--gap, 15px);
+}
+
+.attendanceText {
   box-shadow: 2.5px 5px 4px 5px #888888;
   background-color: #d3d3d3;
   width: 50%;
 }
 
+
 .main-table{
   width: 50%;
+  height: 250px;
   text-align: center;
   box-shadow: 5px 10px 8px 10px #888888;
 }
-
+.main-table:hover{
+  width: 50%;
+  height: 250px;
+  text-align: center;
+  box-shadow: 5px 10px 8px 10px #888888;
+  animation: showText 10s none;
+}
 .navigation-main {
   display: flex;
   font-size: 20px;
