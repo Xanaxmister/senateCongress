@@ -35,11 +35,6 @@ a:hover {
   box-shadow: 5px 10px 8px 10px #888888;
   text-align: center;
 }
-
-th {
-  width: 70px;
-}
-
 .container {
   padding-top: 30px;
   justify-content: center;
@@ -85,25 +80,30 @@ td {
   gap: var(--gap, 15px);
 }
 
-.attendanceText {
+.attendanceText{
   box-shadow: 2.5px 5px 4px 5px #888888;
   background-color: #d3d3d3;
   width: 50%;
+}
+.attendanceText:hover {
+  animation: BiggerText 10s none;
 }
 
 
 .main-table{
   width: 50%;
-  height: 250px;
+  height: 225px;
   text-align: center;
   box-shadow: 5px 10px 8px 10px #888888;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.main-table:hover{
+.second-table{
   width: 50%;
-  height: 250px;
+  height: fit-content;
+  margin: 10px;
   text-align: center;
   box-shadow: 5px 10px 8px 10px #888888;
-  animation: showText 10s none;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .navigation-main {
   display: flex;
