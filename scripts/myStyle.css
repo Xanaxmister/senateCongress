@@ -5,12 +5,14 @@ body {
   background-position: left;
   background-attachment: scroll;
   cursor: url("../logoMouse.png"), auto;
- 
+
 }
-@font-face{
+
+@font-face {
   font-family: 'bulgatti';
   src: url('/fonts/BULGATTI-XGMV.TTF') format('truetype');
 }
+
 a,
 a:link,
 a:visited {
@@ -22,9 +24,11 @@ a:visited {
   font-size: 14px;
   letter-spacing: 3px;
 }
+
 .dropdown-toggle::after {
   content: none;
 }
+
 a:hover {
   text-decoration: none;
   cursor: pointer;
@@ -35,6 +39,7 @@ a:hover {
   box-shadow: 5px 10px 8px 10px #888888;
   text-align: center;
 }
+
 .container {
   padding-top: 30px;
   justify-content: center;
@@ -80,24 +85,26 @@ td {
   gap: var(--gap, 15px);
 }
 
-.attendanceText{
+.attendanceText {
   box-shadow: 2.5px 5px 4px 5px #888888;
   background-color: #d3d3d3;
   width: 50%;
 }
+
 .attendanceText:hover {
   animation: BiggerText 10s none;
 }
 
 
-.main-table{
+.main-table {
   width: 50%;
   height: 225px;
   text-align: center;
   box-shadow: 5px 10px 8px 10px #888888;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.second-table{
+
+.second-table {
   width: 50%;
   height: fit-content;
   margin: 10px;
@@ -105,6 +112,7 @@ td {
   box-shadow: 5px 10px 8px 10px #888888;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
 .navigation-main {
   display: flex;
   font-size: 20px;

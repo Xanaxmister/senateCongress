@@ -64,19 +64,10 @@
         <h1 style="font-family: 'Courier New', Courier, monospace; display: flex;">TGIF LOGO</h1>
         <div class="wrapper">
             <p class="attendanceText">
-                <span style="font-size: 30px; font-weight: bold;">Attendance</span>
-                The Constitution specifies that a majority of members constitutes a quorum to do business in each house.
-                Representatives and senators rarely force the presence of a quorum by demanding quorum calls; thus, in
-                most
-                cases, debates continue even if a majority is not present.
-
-                The Senate uses roll-call votes; a clerk calls out the names of all the senators, each senator stating
-                "aye"
-                or "no" when his or her name is announced. The House reserves roll-call votes for the most formal
-                matters,
-                as a roll-call of all 435 representatives takes quite some time; normally, members vote by electronic
-                device. In the case of a tie, the motion in question fails. In the Senate, the Vice President may (if
-                present) cast the tiebreaking vote.
+                <span style="font-size: 30px; font-weight: bold;">Party loyality</span>
+                Those who consider themselves to be strong partisans, strong Democrats and strong Republicans
+                respectively, tend to be the most faithful in voting for their party's nominee for office and
+                legislation that backs their party's agenda.
             </p>
 
             <div class="main-table">
@@ -113,8 +104,8 @@
                     <thead>
                         <tr>
                             <th>Name</th>
-                            <th>Number of Missed Votes</th>
-                            <th>% Missed</th>
+                            <th>Number of party votes</th>
+                            <th>% Party votes</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -128,8 +119,8 @@
                     <thead>
                         <tr>
                             <th>Name</th>
-                            <th>Number of Missed Votes</th>
-                            <th>% Missed</th>
+                            <th>Number of party votes</th>
+                            <th>% Party votes</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -146,10 +137,10 @@
     </div>
 
     <script type="module">
-        import { fetchJsonData, dataSeparation } from './scripts/attendanceScript.js';
-        var locc = location.search;
-        fetchJsonData(locc)
-            .then(data => dataSeparation(data));
+        import {fetchJsonData, dataSeparation } from './scripts/attendanceScript.js';
+     var locc = location.search;
+     fetchJsonData(locc)
+     .then(data => dataSeparation(data));
 
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
